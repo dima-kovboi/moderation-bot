@@ -257,7 +257,7 @@ async def cmd_info(message: Message, command: CommandObject):
     # Требование: "В ЛС бота: /info @username"
     
     if not command.args:
-        await message.reply("Использование: /info @username")
+        await message.answer("✅ <b>Бот работает исправно!</b>")
         return
 
     username = command.args.replace("@", "").strip()
