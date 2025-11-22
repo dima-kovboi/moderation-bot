@@ -22,9 +22,9 @@ from aiogram.types import (
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
 # --- КОНФИГУРАЦИЯ ---
-BOT_TOKEN = "YOUR_BOT_TOKEN_HERE"
-ADMIN_ID = 123456789  # Замените на реальный ID админа (int)
-TARGET_CHAT_ID = -1001234567890  # Замените на реальный ID чата (int)
+BOT_TOKEN = "7993933674:AAEnbiIfTl7kXaxnABr4BxeywxK5Bfx5oxQ"
+ADMIN_ID = 1438120200  # Замените на реальный ID админа (int)
+TARGET_CHAT_ID = -1002736182440  # Замените на реальный ID чата (int)
 TIMEZONE = 'Europe/Minsk'
 
 # --- КОНСТАНТЫ ---
@@ -37,7 +37,7 @@ logging.basicConfig(level=logging.INFO, stream=sys.stdout)
 logger = logging.getLogger(__name__)
 
 # --- ИНИЦИАЛИЗАЦИЯ ---
-bot = Bot(token=BOT_TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
+bot = Bot(token=BOT_TOKEN.strip(), default=DefaultBotProperties(parse_mode=ParseMode.HTML))
 dp = Dispatcher()
 router = Router()
 scheduler = AsyncIOScheduler(timezone=TIMEZONE)
